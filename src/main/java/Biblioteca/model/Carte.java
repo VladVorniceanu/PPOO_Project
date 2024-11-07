@@ -9,15 +9,15 @@ public class Carte implements Serializable {
     private Categorie categorie;
     private String colectie;
     private LocalDate dataAchizitie;
-    private boolean imprumutata;
+    private boolean citita;
 
-    public Carte(String titlu, String autor, Categorie categorie, String colectie, LocalDate dataAchizitie, boolean imprumutata) {
+    public Carte(String titlu, String autor, Categorie categorie, String colectie, LocalDate dataAchizitie, boolean citita) {
         this.titlu = titlu;
         this.autor = autor;
         this.categorie = categorie;
         this.colectie = colectie;
         this.dataAchizitie = dataAchizitie;
-        this.imprumutata = imprumutata;
+        this.citita = citita;
     }
 
     // Getters și Setters
@@ -57,21 +57,17 @@ public class Carte implements Serializable {
         return dataAchizitie;
     }
 
-    public void setDataAchizitie(LocalDate dataAchizitie) {
-        this.dataAchizitie = dataAchizitie;
+    public boolean isCitita() {
+        return citita;
     }
 
-    public boolean isImprumutata() {
-        return imprumutata;
-    }
-
-    public void setImprumutata(boolean imprumutata) {
-        this.imprumutata = imprumutata;
+    public void setCitita(boolean citita) {
+        this.citita = citita;
     }
 
     @Override
     public String toString() {
-        return getTitlu() + ";" + getAutor() + ";" + getCategorie() + ";" + getColectie() + ";" + getDataAchizitie() + ";" + isImprumutata();
+        return getTitlu() + ";" + getAutor() + ";" + getCategorie() + ";" + getColectie() + ";" + getDataAchizitie() + ";" + isCitita();
     }
 
     public static void validateBookData(String titlu, String autor, String colectie) throws InvalidBookDataException {

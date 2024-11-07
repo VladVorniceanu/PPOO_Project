@@ -5,15 +5,21 @@ import Biblioteca.model.Biblioteca;
 import Biblioteca.model.Carte;
 import Biblioteca.model.Categorie;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
 import Biblioteca.model.InvalidBookDataException;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.VBox;
@@ -34,18 +40,21 @@ public class MainController {
     private TableColumn<Carte, String> colectieColumn;
     @FXML
     private TableColumn<Carte, LocalDate> dataAchizitieColumn;
+    @FXML
+    private TableColumn<Carte, Boolean> cititaColumn;
 
     private Biblioteca biblioteca = new Biblioteca();
     private ObservableList<Carte> cartiObservableList = FXCollections.observableArrayList();
 
     @FXML
     public void initialize() {
-        double numarColoane = 5.0;
+        double numarColoane = 6.0;
         titluColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         autorColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         categorieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         colectieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         dataAchizitieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
+        cititaColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
 
         titluColumn.setCellValueFactory(new PropertyValueFactory<>("titlu"));
         autorColumn.setCellValueFactory(new PropertyValueFactory<>("autor"));
@@ -53,14 +62,39 @@ public class MainController {
         colectieColumn.setCellValueFactory(new PropertyValueFactory<>("colectie"));
         dataAchizitieColumn.setCellValueFactory(new PropertyValueFactory<>("dataAchizitie"));
 
-        biblioteca.incarcaDinFisier("biblioteca.txt");
+        cititaColumn.setCellValueFactory(cellData -> {
+            Carte carte = cellData.getValue();
+            return new SimpleBooleanProperty(carte.isCitita());
+        });
+
+        cititaColumn.setCellFactory(tc -> new CheckBoxTableCell<Carte, Boolean>() {
+            @Override
+            public void updateItem(Boolean item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty) {
+                    setGraphic(null);
+                } else {
+                    CheckBox checkBox = new CheckBox();
+                    checkBox.setSelected(item);
+                    setGraphic(checkBox);
+
+                    // Actualizare proprietatea `citita`
+                    checkBox.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                        Carte carte = getTableView().getItems().get(getIndex());
+                        carte.setCitita(isNowSelected);
+                    });
+                }
+            }
+        });
+
+        biblioteca.incarcaDinFisier("src/main/java/Biblioteca/biblioteca.txt");
         cartiObservableList.setAll(biblioteca.getCarti());  // Asigură-te că toate cărțile sunt setate
         tableView.setItems(cartiObservableList);
 
         // Salvăm datele când aplicația se închide
         Platform.runLater(() -> {
             tableView.getScene().getWindow().setOnCloseRequest(event -> {
-                biblioteca.salveazaInFisier("biblioteca.txt");
+                biblioteca.salveazaInFisier("src/main/java/Biblioteca/biblioteca.txt");
             });
         });
 
@@ -83,71 +117,72 @@ public class MainController {
     }
 
     public void handleAddBook() {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Adaugă Carte Nouă");
+        // Fereastra noua pentru introducere date
+        Stage addBookStage = new Stage();
+        addBookStage.setTitle("Adaugă Carte Nouă");
 
-        // Titlul
-        String titlu = null;
-        while (titlu == null || titlu.trim().isEmpty()) {
-            dialog.setHeaderText("Introduceți titlul cărții:");
-            Optional<String> titluOpt = dialog.showAndWait();
+        VBox vbox = new VBox(10);
+        vbox.setPadding(new Insets(10));
 
-            // Dacă utilizatorul apasă "Cancel" în dialog, ieșim din metodă
-            if (!titluOpt.isPresent()) return;
+        // Titlu
+        TextField titluField = new TextField();
+        titluField.setPromptText("Titlu");
 
-            titlu = titluOpt.get().trim();
+        // Autor
+        TextField autorField = new TextField();
+        autorField.setPromptText("Autor");
 
-            // Afișăm un mesaj de eroare dacă titlul este gol
-            if (titlu.isEmpty()) {
-                showError("Titlul nu poate fi gol!");
+        // Categorie
+        ChoiceBox<Categorie> categorieChoiceBox = new ChoiceBox<>(FXCollections.observableArrayList(Categorie.values()));
+        categorieChoiceBox.setValue(Categorie.LITERATURA); // Valoare implicită
+
+        // Colecție
+        TextField colectieField = new TextField();
+        colectieField.setPromptText("Colecție");
+
+        // Citita - checkbox pentru starea de citit a cărții
+        CheckBox cititaCheckBox = new CheckBox("Cartea a fost citită?");
+
+        // Butonul de salvare
+        Button saveButton = new Button("Salvează");
+        saveButton.setOnAction(e -> {
+            String titlu = titluField.getText().trim();
+            String autor = autorField.getText().trim();
+            String colectie = colectieField.getText().trim();
+            Categorie categorie = categorieChoiceBox.getValue();
+            boolean citita = cititaCheckBox.isSelected();
+
+            // Validare date
+            try {
+                validateBookData(titlu, autor, colectie);
+
+                // Creez cartea și o adaug în lista
+                Carte carte = new Carte(titlu, autor, categorie, colectie, LocalDate.now(), citita);
+                biblioteca.adaugaCarte(carte);
+                cartiObservableList.add(carte);
+
+                addBookStage.close(); // inchidere fereastra
+            } catch (InvalidBookDataException ex) {
+                showError(ex.getMessage()); // Afișăm eroarea dacă datele sunt invalide
             }
-        }
+        });
 
-        dialog.getEditor().clear();
+        // Adaug elementele în layout
+        vbox.getChildren().addAll(
+                new Label("Titlu"), titluField,
+                new Label("Autor"), autorField,
+                new Label("Colecție"), colectieField,
+                new Label("Categorie"), categorieChoiceBox,
+                cititaCheckBox,
+                saveButton
+        );
 
-        // Autorul
-        String autor = null;
-        while (autor == null || autor.trim().isEmpty()) {
-            dialog.setHeaderText("Introduceți autorul cărții:");
-            Optional<String> autorOpt = dialog.showAndWait();
-            if (!autorOpt.isPresent()) return;
-
-            autor = autorOpt.get().trim();
-            if (autor.isEmpty()) {
-                showError("Autorul nu poate fi gol!");
-            }
-        }
-
-        dialog.getEditor().clear();
-
-        // Selectarea categoriei din enum
-        ChoiceDialog<Categorie> categorieDialog = new ChoiceDialog<>(Categorie.LITERATURA, Categorie.values());
-        categorieDialog.setTitle("Selectare Categorie");
-        categorieDialog.setHeaderText("Alegeți categoria cărții:");
-        Optional<Categorie> categorieOpt = categorieDialog.showAndWait();
-        if (!categorieOpt.isPresent()) return;
-        Categorie categorie = categorieOpt.get();
-
-        // Colecția
-        String colectie = null;
-        while (colectie == null || colectie.trim().isEmpty()) {
-            dialog.setHeaderText("Introduceți colecția cărții:");
-            Optional<String> colectieOpt = dialog.showAndWait();
-            if (!colectieOpt.isPresent()) return;
-
-            colectie = colectieOpt.get().trim();
-            if (colectie.isEmpty()) {
-                showError("Colecția nu poate fi goală!");
-            }
-        }
-
-        Carte carte = new Carte(titlu, autor, categorie, colectie, LocalDate.now(), false);
-        biblioteca.adaugaCarte(carte);
-
-        // Adăugăm cartea în lista observabilă (care este asociată cu TableView)
-        cartiObservableList.add(carte);
+        // Setez scena
+        Scene scene = new Scene(vbox);
+        addBookStage.setScene(scene);
+        addBookStage.initModality(Modality.APPLICATION_MODAL); // Blochează fereastra principală până se închide aceasta
+        addBookStage.showAndWait();
     }
-
     public void handleDeleteBook() {
         Carte carteSelectata = tableView.getSelectionModel().getSelectedItem();
         if (carteSelectata != null) {
@@ -157,9 +192,10 @@ public class MainController {
     }
 
     public void handleSearchByAuthor() {
-        TextInputDialog dialog = new TextInputDialog();
+        List<String> autori = biblioteca.getAutoriUnici();
+        ChoiceDialog<String> dialog = new ChoiceDialog<>(autori.get(0), autori);
         dialog.setTitle("Căutare Cărți după Autor");
-        dialog.setHeaderText("Introduceți autorul:");
+        dialog.setHeaderText("Alege autorul:");
 
         Optional<String> autorOpt = dialog.showAndWait();
         if (autorOpt.isPresent()) {
@@ -169,9 +205,10 @@ public class MainController {
     }
 
     public void handleSearchByCollection() {
-        TextInputDialog dialog = new TextInputDialog();
+        List<String> colectiiUnice = biblioteca.getColectiiUnice();
+        ChoiceDialog<String> dialog = new ChoiceDialog<>(colectiiUnice.get(0), colectiiUnice);
         dialog.setTitle("Căutare Cărți după Colecție");
-        dialog.setHeaderText("Introduceți colecția:");
+        dialog.setHeaderText("Alege colecția:");
 
         Optional<String> colectieOpt = dialog.showAndWait();
         if (colectieOpt.isPresent()) {
@@ -180,27 +217,77 @@ public class MainController {
         }
     }
     public void handleGenerateReportByAuthor() {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Generare Raport");
-        dialog.setHeaderText("Introduceți autorul:");
+        List<String> autoriUnici = biblioteca.getAutoriUnici();
+        autoriUnici.add(0, "Introduceți manual");
+
+        // ChoiceDialog pentru selectarea autorului
+        ChoiceDialog<String> dialog = new ChoiceDialog<>(autoriUnici.get(0), autoriUnici);
+        dialog.setTitle("Generare Raport Autor");
+        dialog.setHeaderText("Selectați autorul pentru raport sau alegeți să introduceți manual:");
 
         Optional<String> autorOpt = dialog.showAndWait();
         autorOpt.ifPresent(autor -> {
-            biblioteca.genereazaRaportAutor(autor, "raport_" + autor + ".txt");
-            System.out.println("Raport generat pentru autorul: " + autor);
+            if (autor.equals("Introduceți manual")) {
+                TextInputDialog inputDialog = new TextInputDialog();
+                inputDialog.setTitle("Introduceți Autorul");
+                inputDialog.setHeaderText("Introduceți numele autorului pentru raport:");
+                Optional<String> manualAutor = inputDialog.showAndWait();
+                manualAutor.ifPresent(manualAutorName -> {
+                    String numeFisier = "raport_" + manualAutorName + ".txt";
+                    biblioteca.genereazaRaportAutor(manualAutorName, numeFisier);
+                    showConfirmationMessage(numeFisier);
+                });
+            } else {
+                String numeFisier = "raport_" + autor + ".txt";
+                biblioteca.genereazaRaportAutor(autor, numeFisier);
+                showConfirmationMessage(numeFisier);
+            }
         });
     }
 
     public void handleGenerateReportByCollection() {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Generare Raport");
-        dialog.setHeaderText("Introduceți colecția:");
+        List<String> colectiiUnice = biblioteca.getColectiiUnice();
+        colectiiUnice.add(0, "Introduceți manual");
+
+        // ChoiceDialog pentru selectarea colecției
+        ChoiceDialog<String> dialog = new ChoiceDialog<>(colectiiUnice.get(0), colectiiUnice);
+        dialog.setTitle("Generare Raport Colecție");
+        dialog.setHeaderText("Selectați colecția pentru raport sau alegeți să introduceți manual:");
 
         Optional<String> colectieOpt = dialog.showAndWait();
         colectieOpt.ifPresent(colectie -> {
-            biblioteca.genereazaRaportColectie(colectie, "raport_" + colectie + ".txt");
-            System.out.println("Raport generat pentru colecția: " + colectie);
+            if (colectie.equals("Introduceți manual")) {
+                TextInputDialog inputDialog = new TextInputDialog();
+                inputDialog.setTitle("Introduceți Colecția");
+                inputDialog.setHeaderText("Introduceți numele colecției pentru raport:");
+                Optional<String> manualColectie = inputDialog.showAndWait();
+                manualColectie.ifPresent(manualColectieName -> {
+                    String numeFisier = "raport_" + manualColectieName + ".txt";
+                    biblioteca.genereazaRaportColectie(manualColectieName, numeFisier);
+                    showConfirmationMessage(numeFisier); // Afișează mesajul de confirmare
+                });
+            } else {
+                String numeFisier = "raport_" + colectie + ".txt";
+                biblioteca.genereazaRaportColectie(colectie, numeFisier);
+                showConfirmationMessage(numeFisier); // Afișează mesajul de confirmare
+            }
         });
+    }
+
+    public void handleGenerateReadBooksReport() {
+        biblioteca.genereazaRaportCartiCitite();
+        String dataCurenta = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String numeFisier = "raport_carti_citite_" + dataCurenta + ".txt";
+
+        showConfirmationMessage(numeFisier);
+    }
+
+    private static void showConfirmationMessage(String numeFisier) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Raport Generat");
+        alert.setHeaderText("Raportul a fost generat cu succes!");
+        alert.setContentText("Fișierul \"" + numeFisier + "\" a fost creat.");
+        alert.showAndWait();
     }
 
     private void showError(String message) {
@@ -234,6 +321,10 @@ public class MainController {
         TextField colectieField = new TextField(carte.getColectie());
         colectieField.setPromptText("Colecție");
 
+        // Citita
+        CheckBox cititaCheckBox = new CheckBox("Cartea a fost citită?");
+        cititaCheckBox.setSelected(carte.isCitita());
+
         // Butonul de salvare
         Button saveButton = new Button("Salvează");
         saveButton.setOnAction(e -> {
@@ -241,21 +332,21 @@ public class MainController {
             carte.setAutor(autorField.getText().trim());
             carte.setCategorie(categorieChoice.getValue());
             carte.setColectie(colectieField.getText().trim());
+            carte.setCitita(cititaCheckBox.isSelected());
 
             tableView.refresh(); // Actualizează `TableView`
             editStage.close(); // Închide fereastra de editare
         });
 
-        // Organizăm elementele în layout
         vbox.getChildren().addAll(
                 new Label("Titlu"), titluField,
                 new Label("Autor"), autorField,
                 new Label("Categorie"), categorieChoice,
                 new Label("Colecție"), colectieField,
+                cititaCheckBox,
                 saveButton
         );
 
-        // Setăm scena și afișăm fereastra de editare
         Scene scene = new Scene(vbox);
         editStage.setScene(scene);
         editStage.initModality(Modality.APPLICATION_MODAL); // Blochează fereastra principală până se închide aceasta

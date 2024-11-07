@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Updated logic for adding a book with different checks">
+    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Added editing functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/biblioteca.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +72,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Biblioteca" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Library_Project" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Biblioteca.Biblioteca" />
@@ -96,7 +105,7 @@
       <workItem from="1730118193527" duration="665000" />
       <workItem from="1730118866890" duration="992000" />
       <workItem from="1730981147617" duration="668000" />
-      <workItem from="1730981863923" duration="12883000" />
+      <workItem from="1730981863923" duration="18054000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config and implementation of the project">
       <option name="closed" value="true" />
@@ -146,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730994719748</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added editing functionality">
+      <option name="closed" value="true" />
+      <created>1730995116681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730995116681</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +193,7 @@
     <MESSAGE value="Added new field for category of book and refreshed logic" />
     <MESSAGE value="Repaired logic for adding a book" />
     <MESSAGE value="Updated logic for adding a book with different checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated logic for adding a book with different checks" />
+    <MESSAGE value="Added editing functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added editing functionality" />
   </component>
 </project>

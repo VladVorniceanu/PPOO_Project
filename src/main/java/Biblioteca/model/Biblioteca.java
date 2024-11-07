@@ -2,6 +2,7 @@ package Biblioteca.model;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -88,8 +89,7 @@ public class Biblioteca {
     public void genereazaRaportAutor(String autor, String numeFisier) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
             for (Carte carte : cautaCartiDupaAutor(autor)) {
-                writer.write(carte.getTitlu() + " - " + carte.getColectie());
-                writer.newLine();
+                writer.write(carte.getTitlu() + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -100,13 +100,45 @@ public class Biblioteca {
     public void genereazaRaportColectie(String colectie, String numeFisier) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
             for (Carte carte : cautaCartiDupaColectie(colectie)) {
-                writer.write(carte.getTitlu() + " - " + carte.getAutor());
-                writer.newLine();
+                writer.write(carte.getTitlu() + " - " + carte.getAutor() + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    // Mai poți adăuga și alte metode pentru filtrarea și gestiunea cărților.
+    public void genereazaRaportCartiCitite() {
+        List<Carte> cartiCitite = carti.stream()
+                .filter(Carte::isCitita)
+                .collect(Collectors.toList());
+
+        String dataCurenta = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String numeFisier = "raport_carti_citite_" + dataCurenta + ".txt";
+
+        // Scrierea raportului în fișier
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
+            for (Carte carte : cartiCitite) {
+                writer.write(carte.getTitlu() + " - " + carte.getAutor() + " - " + carte.getCategorie() + "\n");
+            }
+            System.out.println("Raport generat: " + numeFisier);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<String> getAutoriUnici() {
+        List<String> autoriUnici = this.getCarti().stream()
+                .map(Carte::getAutor)
+                .distinct()
+                .collect(Collectors.toList());
+        return autoriUnici;
+    }
+
+    public List<String> getColectiiUnice() {
+        List<String> colectiiUnice = this.getCarti().stream()
+                .map(Carte::getColectie)
+                .distinct()
+                .collect(Collectors.toList());
+        return colectiiUnice;
+    }
 }

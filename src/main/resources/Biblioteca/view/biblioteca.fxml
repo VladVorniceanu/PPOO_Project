@@ -7,27 +7,29 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 
+<?import javafx.scene.text.Text?>
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="Biblioteca.controller.MainController" spacing="10">
-    <!-- Bara de butoane de sus -->
     <HBox spacing="5">
-        <!-- Grupul de butoane funcționale -->
-        <HBox fx:id="logicButtons" spacing="2">
-            <Button text="Adaugă Carte" onAction="#handleAddBook"/>
-            <Button text="Șterge Carte" onAction="#handleDeleteBook"/>
-            <Button text="Cărți după Autor" onAction="#handleSearchByAuthor"/>
-            <Button text="Cărți după Colecție" onAction="#handleSearchByCollection"/>
-            <Button text="Generează Raport Autor" onAction="#handleGenerateReportByAuthor"/>
-            <Button text="Generează Raport Colecție" onAction="#handleGenerateReportByCollection"/>
-        </HBox>
+        <VBox fx:id="logicButtons" spacing="2">
+            <HBox spacing="2">
+                <Button text="Adaugă Carte" onAction="#handleAddBook"/>
+                <Button text="Șterge Carte" onAction="#handleDeleteBook"/>
+                <Button text="Caută după Autor" onAction="#handleSearchByAuthor"/>
+                <Button text="Caută după Colecție" onAction="#handleSearchByCollection"/>
+            </HBox>
+            <HBox spacing="2">
+                <Button text="Generează Raport Autor" onAction="#handleGenerateReportByAuthor"/>
+                <Button text="Generează Raport Colecție" onAction="#handleGenerateReportByCollection"/>
+                <Button text="Generează Raport Cărți Citite" onAction="#handleGenerateReadBooksReport"/>
+            </HBox>
+        </VBox>
 
-        <!-- Spațiul gol care împinge butonul de refresh la dreapta -->
         <Region HBox.hgrow="ALWAYS" />
 
-        <!-- Butonul de refresh la dreapta -->
         <Button text="Refresh" onAction="#handleRefresh"/>
     </HBox>
 
-    <!-- Tabelul de cărți -->
+    <Text>Poți edita o înregistrare prin dublu-click pe aceasta.</Text>
     <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="titluColumn" text="Titlu"/>
@@ -35,6 +37,7 @@
             <TableColumn fx:id="categorieColumn" text="Categorie"/>
             <TableColumn fx:id="colectieColumn" text="Colecție"/>
             <TableColumn fx:id="dataAchizitieColumn" text="Data Achizitie"/>
+            <TableColumn fx:id="cititaColumn" text="Citită"/>
         </columns>
     </TableView>
 </VBox>

@@ -1,0 +1,200 @@
+The Alchemist;Paulo Coelho;ISTORIE;Cartea Romaneasca;2020-03-14;false
+To Kill a Mockingbird;Harper Lee;TEHNOLOGIE;Nemira;2016-07-15;true
+The Iliad;Homer;TEHNOLOGIE;Penguin Modern Classics;2014-07-22;true
+Crime and Punishment;Fyodor Dostoevsky;LITERATURA;Arthur;2018-01-24;false
+O scrisoare pierduta;Ion Luca Caragiale;BIOGRAFIE;All;2015-08-06;false
+Moara cu noroc;Ioan Slavici;SF;Humanitas;2021-01-02;false
+The Alchemist;Paulo Coelho;STIINTA;Polirom;2019-07-03;true
+The Road;Cormac McCarthy;STIINTA;Editura Litera;2022-06-15;false
+Faust;Johann Wolfgang von Goethe;ISTORIE;Albatros;2023-04-07;false
+Ulysses;James Joyce;ISTORIE;Vintage Books;2020-12-16;false
+Divergent;Veronica Roth;BIOGRAFIE;HarperCollins;2017-07-02;false
+Breaking Dawn;Stephenie Meyer;STIINTA;Univers;2023-08-20;false
+The Great Gatsby;F. Scott Fitzgerald;ARTA;Penguin Modern Classics;2019-03-26;false
+Cuvinte potrivite;Tudor Arghezi;ARTA;All;2023-07-28;false
+The Lord of the Rings;J.R.R. Tolkien;SF;Rao;2020-01-21;true
+Paradise Lost;John Milton;TEHNOLOGIE;Vintage Books;2015-11-30;false
+Journey to the Center of the Earth;Jules Verne;ARTA;All;2018-09-16;false
+Journey to the Center of the Earth;Jules Verne;TEHNOLOGIE;Univers;2023-12-04;false
+Breaking Dawn;Stephenie Meyer;ARTA;Vintage Books;2014-06-16;false
+The Lord of the Rings;J.R.R. Tolkien;SF;Polirom;2021-11-13;false
+The Hobbit;J.R.R. Tolkien;ARTA;Editura Litera;2018-01-06;false
+The Trial;Franz Kafka;STIINTA;Macmillan;2019-10-28;false
+Faust;Johann Wolfgang von Goethe;LITERATURA;Nemira;2021-07-18;false
+New Moon;Stephenie Meyer;SF;Cartea Romaneasca;2019-07-03;false
+The Great Gatsby;F. Scott Fitzgerald;BIOGRAFIE;Penguin Modern Classics;2022-01-04;false
+Candide;Voltaire;TEHNOLOGIE;HarperCollins;2023-10-25;false
+One Hundred Years of Solitude;Gabriel Garcia Marquez;ISTORIE;Nemira;2022-12-07;false
+The Hunger Games;Suzanne Collins;SF;Cartea Romaneasca;2023-10-29;false
+The Catcher in the Rye;J.D. Salinger;ISTORIE;Polirom;2023-12-09;false
+Faust;Johann Wolfgang von Goethe;ISTORIE;Penguin Classics;2023-11-20;false
+Journey to the Center of the Earth;Jules Verne;LITERATURA;Albatros;2023-09-17;false
+The Fault in Our Stars;John Green;STIINTA;Univers;2023-01-16;false
+Les Misérables;Victor Hugo;STIINTA;Polirom;2021-06-06;false
+The Great Alone;Kristin Hannah;TEHNOLOGIE;Editura Litera;2022-07-13;false
+Twilight;Stephenie Meyer;STIINTA;Albatros;2021-10-13;false
+The Bell Jar;Sylvia Plath;TEHNOLOGIE;Vintage Books;2015-05-19;false
+Anna Karenina;Leo Tolstoy;ARTA;All;2018-12-01;false
+Divergent;Veronica Roth;LITERATURA;Editura Litera;2017-09-28;false
+Invisible Man;Ralph Ellison;TEHNOLOGIE;All;2015-10-27;false
+The Lovely Bones;Alice Sebold;STIINTA;HarperCollins;2019-11-05;false
+O scrisoare pierduta;Ion Luca Caragiale;BIOGRAFIE;Penguin Modern Classics;2023-11-27;false
+The Catcher in the Rye;J.D. Salinger;ARTA;Penguin Modern Classics;2020-09-18;false
+20,000 Leagues Under the Sea;Jules Verne;STIINTA;Polirom;2023-02-24;false
+Wuthering Heights;Emily Bronte;STIINTA;HarperCollins;2017-12-20;false
+Great Expectations;Charles Dickens;ISTORIE;Editura Litera;2021-10-07;false
+One Hundred Years of Solitude;Gabriel Garcia Marquez;STIINTA;Nemira;2020-05-18;false
+Divergent;Veronica Roth;SF;All;2020-09-17;false
+The Shining;Stephen King;ISTORIE;Cartea Romaneasca;2021-12-15;false
+Patul lui Procust;Camil Petrescu;TEHNOLOGIE;Penguin Modern Classics;2022-09-22;false
+Harry Potter and the Philosopher's Stone;J.K. Rowling;ISTORIE;Rao;2021-07-24;false
+The Road;Cormac McCarthy;SF;Polirom;2019-05-29;false
+Catching Fire;Suzanne Collins;SF;Arthur;2023-01-04;false
+Rebecca;Daphne du Maurier;ISTORIE;Penguin Classics;2023-04-28;false
+Inferno;Dan Brown;ISTORIE;Macmillan;2015-08-24;false
+Romanul adolescentului miop;Mircea Eliade;SF;Univers;2018-03-11;false
+The Shining;Stephen King;TEHNOLOGIE;Rao;2023-10-09;false
+Din umbra zidurilor;Octavian Goga;ISTORIE;Vintage Books;2020-06-23;false
+Brave New World;Aldous Huxley;ISTORIE;Albatros;2023-06-27;false
+Madame Bovary;Gustave Flaubert;BIOGRAFIE;Arthur;2021-01-19;false
+The Count of Monte Cristo;Alexandre Dumas;STIINTA;Editura Litera;2019-11-22;false
+Lolita;Vladimir Nabokov;BIOGRAFIE;Humanitas;2019-09-24;false
+Rebecca;Daphne du Maurier;LITERATURA;Cartea Romaneasca;2023-04-11;false
+David Copperfield;Charles Dickens;SF;Cartea Romaneasca;2021-10-02;false
+20,000 Leagues Under the Sea;Jules Verne;STIINTA;Nemira;2023-05-13;false
+The Fault in Our Stars;John Green;STIINTA;Albatros;2021-09-24;false
+The Little Prince;Antoine de Saint-Exupéry;LITERATURA;Cartea Romaneasca;2022-02-17;false
+The Grapes of Wrath;John Steinbeck;BIOGRAFIE;Macmillan;2020-12-14;false
+The Great Gatsby;F. Scott Fitzgerald;LITERATURA;Univers;2021-01-26;false
+Laudă somnului;Tudor Arghezi;LITERATURA;Penguin Classics;2023-02-25;false
+The Catcher in the Rye;J.D. Salinger;SF;Cartea Romaneasca;2018-06-12;false
+Journey to the Center of the Earth;Jules Verne;BIOGRAFIE;Penguin Classics;2020-03-08;false
+Gone with the Wind;Margaret Mitchell;LITERATURA;Rao;2021-12-11;false
+The Divine Comedy;Dante Alighieri;ISTORIE;Polirom;2023-07-22;false
+Slaughterhouse-Five;Kurt Vonnegut;SF;Arthur;2023-08-01;false
+Catch-22;Joseph Heller;TEHNOLOGIE;HarperCollins;2018-11-14;false
+The Shining;Stephen King;TEHNOLOGIE;All;2020-08-09;false
+Anna Karenina;Leo Tolstoy;ARTA;Editura Litera;2022-02-06;false
+Emma;Jane Austen;SF;Vintage Books;2021-08-29;false
+Breaking Dawn;Stephenie Meyer;STIINTA;Humanitas;2020-12-17;false
+Invisible Man;Ralph Ellison;STIINTA;Macmillan;2021-01-30;false
+Romanul adolescentului miop;Mircea Eliade;ISTORIE;HarperCollins;2022-08-27;false
+The Iliad;Homer;ISTORIE;Arthur;2018-06-23;false
+Catch-22;Joseph Heller;TEHNOLOGIE;Univers;2022-09-03;false
+Candide;Voltaire;ISTORIE;Penguin Modern Classics;2023-07-06;false
+New Moon;Stephenie Meyer;STIINTA;Univers;2023-11-26;false
+Moby-Dick;Herman Melville;SF;Arthur;2023-09-27;false
+The Kite Runner;Khaled Hosseini;TEHNOLOGIE;Cartea Romaneasca;2022-09-21;false
+Don Quixote;Miguel de Cervantes;STIINTA;Nemira;2022-11-23;false
+The Grapes of Wrath;John Steinbeck;ARTA;Arthur;2023-12-09;false
+The Iliad;Homer;ARTA;HarperCollins;2021-07-17;false
+Cuvinte potrivite;Tudor Arghezi;TEHNOLOGIE;Albatros;2021-08-11;false
+East of Eden;John Steinbeck;BIOGRAFIE;Editura Litera;2021-01-25;false
+David Copperfield;Charles Dickens;TEHNOLOGIE;All;2022-11-24;false
+A Tale of Two Cities;Charles Dickens;SF;Penguin Modern Classics;2017-12-20;false
+Catch-22;Joseph Heller;LITERATURA;Rao;2018-05-05;false
+The Iliad;Homer;ARTA;Nemira;2020-09-29;false
+Sense and Sensibility;Jane Austen;TEHNOLOGIE;Rao;2020-09-22;false
+Twilight;Stephenie Meyer;LITERATURA;Univers;2023-05-18;false
+The Odyssey;Homer;STIINTA;Polirom;2022-11-22;false
+Brave New World;Aldous Huxley;SF;Nemira;2022-10-05;false
+Memoirs of a Geisha;Arthur Golden;SF;Arthur;2019-08-21;false
+The Old Man and the Sea;Ernest Hemingway;LITERATURA;Rao;2019-08-01;false
+The Road;Cormac McCarthy;ISTORIE;Macmillan;2018-08-25;false
+Emma;Jane Austen;BIOGRAFIE;Penguin Classics;2020-02-18;false
+Beloved;Toni Morrison;ISTORIE;Macmillan;2023-06-01;false
+Cuvinte potrivite;Tudor Arghezi;ISTORIE;Humanitas;2023-11-29;false
+Baltagul;Mihail Sadoveanu;TEHNOLOGIE;Penguin Classics;2022-02-21;false
+The Count of Monte Cristo;Alexandre Dumas;ARTA;Arthur;2021-04-17;false
+Pride and Prejudice;Jane Austen;SF;HarperCollins;2022-01-14;false
+The Trial;Franz Kafka;SF;Nemira;2023-06-17;false
+The Hunger Games;Suzanne Collins;TEHNOLOGIE;Rao;2018-10-15;false
+The Scarlet Letter;Nathaniel Hawthorne;BIOGRAFIE;Penguin Modern Classics;2020-02-11;false
+The Help;Kathryn Stockett;BIOGRAFIE;Vintage Books;2023-08-18;false
+David Copperfield;Charles Dickens;ISTORIE;Univers;2022-07-07;false
+Ulysses;James Joyce;STIINTA;Humanitas;2021-06-21;false
+Breaking Dawn;Stephenie Meyer;LITERATURA;Nemira;2023-11-10;false
+Dracula;Bram Stoker;ARTA;Univers;2022-04-05;false
+The Sun Also Rises;Ernest Hemingway;LITERATURA;Editura Litera;2021-08-27;false
+The Odyssey;Homer;STIINTA;Albatros;2020-04-14;false
+Moara cu noroc;Ioan Slavici;ISTORIE;Rao;2018-07-16;false
+The Help;Kathryn Stockett;LITERATURA;Albatros;2021-12-31;false
+1984;George Orwell;ISTORIE;Polirom;2023-02-11;false
+East of Eden;John Steinbeck;ISTORIE;Albatros;2021-12-24;false
+Patul lui Procust;Camil Petrescu;ISTORIE;All;2021-10-19;false
+Oliver Twist;Charles Dickens;ISTORIE;Vintage Books;2018-07-22;false
+To Kill a Mockingbird;Harper Lee;STIINTA;Humanitas;2021-10-30;false
+Wuthering Heights;Emily Bronte;BIOGRAFIE;Univers;2022-11-04;false
+The Old Man and the Sea;Ernest Hemingway;ARTA;HarperCollins;2023-06-04;false
+Inferno;Dan Brown;LITERATURA;All;2021-04-04;false
+The Great Alone;Kristin Hannah;TEHNOLOGIE;Univers;2018-11-05;false
+Life of Pi;Yann Martel;SF;HarperCollins;2021-04-24;false
+Pride and Prejudice;Jane Austen;BIOGRAFIE;Penguin Classics;2020-02-16;false
+1984;George Orwell;BIOGRAFIE;HarperCollins;2023-02-28;false
+Moby-Dick;Herman Melville;LITERATURA;Penguin Classics;2023-08-13;false
+The Lovely Bones;Alice Sebold;LITERATURA;Arthur;2018-11-14;false
+Harry Potter and the Philosopher's Stone;J.K. Rowling;ISTORIE;Macmillan;2020-03-28;false
+1984;George Orwell;ARTA;Nemira;2021-06-15;false
+The Little Prince;Antoine de Saint-Exupéry;SF;Rao;2021-04-02;false
+Gone with the Wind;Margaret Mitchell;ISTORIE;HarperCollins;2021-12-19;false
+20,000 Leagues Under the Sea;Jules Verne;SF;Penguin Modern Classics;2018-09-24;false
+David Copperfield;Charles Dickens;TEHNOLOGIE;Humanitas;2019-10-03;false
+The Shining;Stephen King;LITERATURA;Albatros;2020-10-22;false
+Great Expectations;Charles Dickens;STIINTA;Penguin Classics;2020-01-18;false
+Amintiri din copilărie;Ion Creangă;STIINTA;Penguin Modern Classics;2022-10-26;false
+One Hundred Years of Solitude;Gabriel Garcia Marquez;SF;Penguin Modern Classics;2023-07-11;false
+Ulysses;James Joyce;ARTA;Penguin Modern Classics;2023-04-16;false
+Dracula;Bram Stoker;ARTA;Penguin Modern Classics;2023-05-05;false
+The Brothers Karamazov;Fyodor Dostoevsky;ARTA;All;2023-03-17;false
+Din umbra zidurilor;Octavian Goga;ARTA;All;2019-10-26;false
+The Fault in Our Stars;John Green;BIOGRAFIE;Rao;2022-12-01;false
+Atonement;Ian McEwan;LITERATURA;Arthur;2023-12-09;false
+The Scarlet Letter;Nathaniel Hawthorne;LITERATURA;Humanitas;2023-01-06;false
+Madame Bovary;Gustave Flaubert;SF;Univers;2023-11-06;false
+Moby-Dick;Herman Melville;TEHNOLOGIE;HarperCollins;2019-08-23;false
+War and Peace;Leo Tolstoy;BIOGRAFIE;Editura Litera;2015-05-01;false
+Beloved;Toni Morrison;LITERATURA;Penguin Modern Classics;2021-02-05;false
+The Trial;Franz Kafka;ARTA;All;2018-06-14;false
+War and Peace;Leo Tolstoy;ISTORIE;Arthur;2019-09-20;false
+Life of Pi;Yann Martel;ISTORIE;Macmillan;2014-02-07;false
+Laudă somnului;Lucian Blaga;SF;Editura Litera;2016-01-11;false
+The Trial;Franz Kafka;ISTORIE;Rao;2021-10-04;false
+Slaughterhouse-Five;Kurt Vonnegut;ISTORIE;All;2022-05-12;false
+Lolita;Vladimir Nabokov;BIOGRAFIE;Cartea Romaneasca;2023-07-16;false
+Lolita;Vladimir Nabokov;SF;Vintage Books;2023-01-24;false
+Catch-22;Joseph Heller;BIOGRAFIE;Polirom;2021-02-04;false
+Harry Potter and the Philosopher's Stone;J.K. Rowling;BIOGRAFIE;Nemira;2023-10-01;false
+Frankenstein;Mary Shelley;STIINTA;Univers;2020-09-29;false
+Great Expectations;Charles Dickens;TEHNOLOGIE;Penguin Modern Classics;2021-11-14;false
+The Stranger;Albert Camus;STIINTA;Humanitas;2023-07-11;false
+Lolita;Vladimir Nabokov;SF;Penguin Modern Classics;2019-07-18;false
+Madame Bovary;Gustave Flaubert;SF;Polirom;2020-05-12;false
+Breaking Dawn;Stephenie Meyer;ISTORIE;HarperCollins;2016-09-22;false
+The Stranger;Albert Camus;TEHNOLOGIE;Penguin Classics;2021-05-07;false
+Din umbra zidurilor;Octavian Goga;ARTA;Nemira;2019-11-07;false
+Emma;Jane Austen;ISTORIE;Cartea Romaneasca;2021-07-07;false
+The Count of Monte Cristo;Alexandre Dumas;ISTORIE;Vintage Books;2022-01-26;false
+David Copperfield;Charles Dickens;SF;Univers;2021-07-17;false
+Jane Eyre;Charlotte Bronte;LITERATURA;Vintage Books;2023-02-09;false
+Catch-22;Joseph Heller;BIOGRAFIE;Arthur;2021-01-14;false
+Crime and Punishment;Fyodor Dostoevsky;ISTORIE;Nemira;2022-01-09;false
+Sense and Sensibility;Jane Austen;STIINTA;Vintage Books;2018-07-11;false
+The Metamorphosis;Franz Kafka;TEHNOLOGIE;Editura Litera;2023-02-06;false
+Around the World in 80 Days;Jules Verne;ARTA;Humanitas;2018-05-16;false
+Brave New World;Aldous Huxley;ISTORIE;Cartea Romaneasca;2023-11-04;false
+The Great Alone;Kristin Hannah;SF;Nemira;2022-01-03;false
+Patul lui Procust;Camil Petrescu;SF;Vintage Books;2022-04-12;false
+Jane Eyre;Charlotte Bronte;LITERATURA;Editura Litera;2022-05-18;false
+Madame Bovary;Gustave Flaubert;LITERATURA;Polirom;2022-12-28;false
+Around the World in 80 Days;Jules Verne;STIINTA;Macmillan;2023-07-19;false
+The Odyssey;Homer;SF;HarperCollins;2018-03-06;false
+The Stranger;Albert Camus;LITERATURA;Penguin Classics;2022-06-02;false
+The Picture of Dorian Gray;Oscar Wilde;STIINTA;Penguin Modern Classics;2017-09-27;false
+20,000 Leagues Under the Sea;Jules Verne;LITERATURA;Rao;2016-02-13;false
+The Da Vinci Code;Dan Brown;SF;All;2022-12-22;false
+New Moon;Stephenie Meyer;BIOGRAFIE;Univers;2023-05-23;false
+Gone with the Wind;Margaret Mitchell;BIOGRAFIE;Humanitas;2023-11-09;false
+The Divine Comedy;Dante Alighieri;ARTA;Vintage Books;2017-08-12;false
+Emma;Jane Austen;ARTA;Rao;2017-08-06;false
+Invisible Man;Ralph Ellison;SF;Macmillan;2018-05-05;false
+Becoming Steve Jobs;Rick Tetzeli;BIOGRAFIE;Publica;2024-11-07;false
