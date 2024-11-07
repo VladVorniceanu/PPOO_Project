@@ -32,6 +32,7 @@
         <columns>
             <TableColumn fx:id="titluColumn" text="Titlu"/>
             <TableColumn fx:id="autorColumn" text="Autor"/>
+            <TableColumn fx:id="categorieColumn" text="Categorie"/>
             <TableColumn fx:id="colectieColumn" text="Colecție"/>
             <TableColumn fx:id="dataAchizitieColumn" text="Data Achizitie"/>
         </columns>

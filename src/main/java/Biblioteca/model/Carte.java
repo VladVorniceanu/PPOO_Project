@@ -6,20 +6,21 @@ import java.time.LocalDate;
 public class Carte implements Serializable {
     private String titlu;
     private String autor;
+    private Categorie categorie;
     private String colectie;
     private LocalDate dataAchizitie;
     private boolean imprumutata;
 
-    public Carte(String titlu, String autor, String colectie, LocalDate dataAchizitie, boolean imprumutata) {
+    public Carte(String titlu, String autor, Categorie categorie, String colectie, LocalDate dataAchizitie, boolean imprumutata) {
         this.titlu = titlu;
         this.autor = autor;
+        this.categorie = categorie;
         this.colectie = colectie;
         this.dataAchizitie = dataAchizitie;
         this.imprumutata = imprumutata;
     }
 
     // Getters și Setters
-
     public String getTitlu() {
         return titlu;
     }
@@ -34,6 +35,14 @@ public class Carte implements Serializable {
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+
+    public Categorie getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
     }
 
     public String getColectie() {
@@ -58,5 +67,10 @@ public class Carte implements Serializable {
 
     public void setImprumutata(boolean imprumutata) {
         this.imprumutata = imprumutata;
+    }
+
+    @Override
+    public String toString() {
+        return getTitlu() + ";" + getAutor() + ";" + getCategorie() + ";" + getColectie() + ";" + getDataAchizitie() + ";" + isImprumutata();
     }
 }

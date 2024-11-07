@@ -40,7 +40,7 @@ public class Biblioteca {
     public void salveazaInFisier(String numeFisier) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
             for (Carte carte : carti) {
-                writer.write(carte.getTitlu() + ";" + carte.getAutor() + ";" + carte.getColectie() + ";" + carte.getDataAchizitie() + ";" + carte.isImprumutata());
+                writer.write(carte.toString());
                 writer.newLine();
             }
         } catch (IOException e) {
@@ -62,14 +62,15 @@ public class Biblioteca {
             String linie;
             while ((linie = reader.readLine()) != null) {
                 String[] campuri = linie.split(";");
-                if (campuri.length == 5) {
+                if (campuri.length == 6) {
                     String titlu = campuri[0];
                     String autor = campuri[1];
-                    String colectie = campuri[2];
-                    LocalDate dataImprumut = LocalDate.parse(campuri[3]);
-                    boolean imprumutata = Boolean.parseBoolean(campuri[4]);
+                    String categorie = campuri[2];
+                    String colectie = campuri[3];
+                    LocalDate dataImprumut = LocalDate.parse(campuri[4]);
+                    boolean imprumutata = Boolean.parseBoolean(campuri[5]);
 
-                    Carte carte = new Carte(titlu, autor, colectie, dataImprumut, imprumutata);
+                    Carte carte = new Carte(titlu, autor, Categorie.valueOf(categorie), colectie, dataImprumut, imprumutata);
                     carti.add(carte);
                 }
             }

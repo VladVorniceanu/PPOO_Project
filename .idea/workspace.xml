@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Made it run again">
+    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Added text files reading/writing capability + various tweaks">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Categorie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteca.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" afterDir="false" />
@@ -21,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -99,7 +101,7 @@
       <workItem from="1730118193527" duration="665000" />
       <workItem from="1730118866890" duration="992000" />
       <workItem from="1730981147617" duration="668000" />
-      <workItem from="1730981863923" duration="7569000" />
+      <workItem from="1730981863923" duration="9117000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config and implementation of the project">
       <option name="closed" value="true" />
@@ -117,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730982058839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added text files reading/writing capability + various tweaks">
+      <option name="closed" value="true" />
+      <created>1730990055051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730990055051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,17 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial config and implementation of the project" />
     <MESSAGE value="Made it run again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it run again" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added text files reading/writing capability + various tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added text files reading/writing capability + various tweaks" />
   </component>
 </project>

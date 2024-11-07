@@ -2,10 +2,12 @@ package Biblioteca.controller;
 
 import Biblioteca.model.Biblioteca;
 import Biblioteca.model.Carte;
+import Biblioteca.model.Categorie;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextInputDialog;
@@ -22,6 +24,8 @@ public class MainController {
     @FXML
     private TableColumn<Carte, String> autorColumn;
     @FXML
+    private TableColumn<Carte, Categorie> categorieColumn;
+    @FXML
     private TableColumn<Carte, String> colectieColumn;
     @FXML
     private TableColumn<Carte, LocalDate> dataAchizitieColumn;
@@ -31,14 +35,16 @@ public class MainController {
 
     @FXML
     public void initialize() {
-        double numarColoane = 4.0;
+        double numarColoane = 5.0;
         titluColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         autorColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
+        categorieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         colectieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
         dataAchizitieColumn.prefWidthProperty().bind(tableView.widthProperty().divide(numarColoane));
 
         titluColumn.setCellValueFactory(new PropertyValueFactory<>("titlu"));
         autorColumn.setCellValueFactory(new PropertyValueFactory<>("autor"));
+        categorieColumn.setCellValueFactory(new PropertyValueFactory<>("categorie"));
         colectieColumn.setCellValueFactory(new PropertyValueFactory<>("colectie"));
         dataAchizitieColumn.setCellValueFactory(new PropertyValueFactory<>("dataAchizitie"));
 
@@ -75,6 +81,14 @@ public class MainController {
         if (!autorOpt.isPresent()) return;
         String autor = autorOpt.get();
 
+        // Selectarea categoriei din enum
+        ChoiceDialog<Categorie> categorieDialog = new ChoiceDialog<>(Categorie.LITERATURA, Categorie.values());
+        categorieDialog.setTitle("Selectare Categorie");
+        categorieDialog.setHeaderText("Alegeți categoria cărții:");
+        Optional<Categorie> categorieOpt = categorieDialog.showAndWait();
+        if (!categorieOpt.isPresent()) return;
+        Categorie categorie = categorieOpt.get();
+
         // Colecția
         dialog.setHeaderText("Introduceți colecția cărții:");
         Optional<String> colectieOpt = dialog.showAndWait();
@@ -82,7 +96,7 @@ public class MainController {
         String colectie = colectieOpt.get();
 
         // Crearea cărții și adăugarea în biblioteca
-        Carte carte = new Carte(titlu, autor, colectie, LocalDate.now(), false);
+        Carte carte = new Carte(titlu, autor, categorie, colectie, LocalDate.now(), false);
         biblioteca.adaugaCarte(carte);
 
         // Adăugăm cartea în lista observabilă (care este asociată cu TableView)
