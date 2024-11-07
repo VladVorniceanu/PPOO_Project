@@ -1,0 +1,199 @@
+The Kite Runner;Khaled Hosseini;Cartea Romaneasca;1931-12-29;false
+Brave New World;Aldous Huxley;HarperCollins;1998-12-07;false
+Dracula;Bram Stoker;Humanitas;1988-06-10;false
+The Iliad;Homer;Cartea Romaneasca;1945-08-05;false
+The Lovely Bones;Alice Sebold;Univers;1953-05-29;false
+To Kill a Mockingbird;Harper Lee;Nemira;1969-11-27;false
+Moby-Dick;Herman Melville;Albatros;1949-04-13;false
+The Little Prince;Antoine de Saint-Exupéry;Penguin Modern Classics;2022-11-21;false
+The Lord of the Rings;J.R.R. Tolkien;Penguin Modern Classics;1943-05-11;false
+Laudă somnului;Lucian Blaga;HarperCollins;1994-11-17;false
+Inferno;Dan Brown;Macmillan;1990-05-25;false
+New Moon;Stephenie Meyer;Humanitas;2012-05-13;false
+War and Peace;Leo Tolstoy;Humanitas;2015-09-20;false
+Wuthering Heights;Emily Bronte;Humanitas;1974-04-15;false
+Pride and Prejudice;Jane Austen;Nemira;1930-08-22;false
+The Book Thief;Markus Zusak;Polirom;2022-05-25;false
+Emma;Jane Austen;Humanitas;1938-11-04;false
+Lolita;Vladimir Nabokov;Penguin Modern Classics;1970-02-09;false
+Moara cu noroc;Ioan Slavici;Penguin Classics;1985-11-26;false
+Les Misérables;Victor Hugo;HarperCollins;1945-12-05;false
+Laudă somnului;Lucian Blaga;Albatros;1972-11-23;false
+20,000 Leagues Under the Sea;Jules Verne;Polirom;1966-12-19;false
+The Count of Monte Cristo;Alexandre Dumas;Nemira;1977-01-16;false
+Beloved;Toni Morrison;Rao;1937-03-26;false
+The Brothers Karamazov;Fyodor Dostoevsky;Nemira;1958-06-08;false
+The Iliad;Homer;Nemira;2019-01-27;false
+The Hobbit;J.R.R. Tolkien;Nemira;2008-06-01;false
+The Hunger Games;Suzanne Collins;Rao;1936-10-12;false
+Moby-Dick;Herman Melville;Penguin Modern Classics;1980-06-03;false
+Siddhartha;Hermann Hesse;Vintage Books;2017-01-17;false
+The Sun Also Rises;Ernest Hemingway;Editura Litera;1986-08-17;false
+Anna Karenina;Leo Tolstoy;Rao;1961-08-01;false
+Les Misérables;Victor Hugo;Vintage Books;1998-11-26;false
+The Little Prince;Antoine de Saint-Exupéry;Univers;2020-12-11;false
+The Kite Runner;Khaled Hosseini;Albatros;1969-10-17;false
+Dracula;Bram Stoker;Rao;1995-07-19;false
+Gulliver's Travels;Jonathan Swift;Humanitas;1979-08-19;false
+The Old Man and the Sea;Ernest Hemingway;Macmillan;2022-09-25;false
+Catch-22;Joseph Heller;Nemira;2003-07-26;false
+The Fault in Our Stars;John Green;Nemira;1935-05-05;false
+The Old Man and the Sea;Ernest Hemingway;Arthur;1996-03-08;false
+Around the World in 80 Days;Jules Verne;Macmillan;1993-02-09;false
+Oliver Twist;Charles Dickens;Editura Litera;1996-09-05;false
+The Divine Comedy;Dante Alighieri;Penguin Classics;1926-09-11;false
+War and Peace;Leo Tolstoy;Univers;2010-08-07;false
+1984;George Orwell;HarperCollins;1988-07-27;false
+Paradise Lost;John Milton;Albatros;1942-06-13;false
+Candide;Voltaire;Nemira;1970-07-05;false
+The Brothers Karamazov;Fyodor Dostoevsky;Penguin Classics;2020-12-02;false
+The Fault in Our Stars;John Green;Editura Litera;1994-09-23;false
+20,000 Leagues Under the Sea;Jules Verne;Arthur;1954-11-01;false
+Wuthering Heights;Emily Bronte;Arthur;1991-10-06;false
+One Hundred Years of Solitude;Gabriel Garcia Marquez;Univers;2018-05-10;false
+The Road;Cormac McCarthy;Editura Litera;1950-10-29;false
+The Stranger;Albert Camus;Cartea Romaneasca;1983-11-23;false
+The Trial;Franz Kafka;Univers;2006-09-09;false
+The Three Musketeers;Alexandre Dumas;Humanitas;1928-10-17;false
+The Sun Also Rises;Ernest Hemingway;All;1958-01-26;false
+Invisible Man;Ralph Ellison;Penguin Modern Classics;1940-05-09;false
+1984;George Orwell;Cartea Romaneasca;1930-12-08;false
+A Tale of Two Cities;Charles Dickens;Rao;1952-05-31;false
+Catching Fire;Suzanne Collins;Univers;1959-08-25;false
+Jane Eyre;Charlotte Bronte;Arthur;2023-02-03;false
+To Kill a Mockingbird;Harper Lee;Rao;1948-08-26;false
+O scrisoare pierduta;Ion Luca Caragiale;Humanitas;1977-03-29;false
+Romanul adolescentului miop;Mircea Eliade;Humanitas;1952-03-08;false
+Moara cu noroc;Ioan Slavici;Polirom;1983-07-12;false
+Amintiri din copilărie;Ion Creangă;Cartea Romaneasca;1954-01-17;false
+Breaking Dawn;Stephenie Meyer;Nemira;2005-05-27;false
+Breaking Dawn;Stephenie Meyer;Humanitas;1973-05-27;false
+Don Quixote;Miguel de Cervantes;HarperCollins;1925-03-22;false
+Invisible Man;Ralph Ellison;All;1979-05-27;false
+The Lord of the Rings;J.R.R. Tolkien;Penguin Modern Classics;1924-07-20;false
+Frankenstein;Mary Shelley;Polirom;1933-11-05;false
+The Great Alone;Kristin Hannah;HarperCollins;1976-07-06;false
+The Grapes of Wrath;John Steinbeck;Editura Litera;1933-08-03;false
+The Great Alone;Kristin Hannah;Humanitas;2005-01-10;false
+Invisible Man;Ralph Ellison;Polirom;2013-03-23;false
+The Alchemist;Paulo Coelho;Cartea Romaneasca;1956-07-07;false
+Moara cu noroc;Ioan Slavici;Penguin Classics;1938-03-31;false
+The Fault in Our Stars;John Green;Vintage Books;1939-03-18;false
+Great Expectations;Charles Dickens;Arthur;1973-07-11;false
+Ion;Liviu Rebreanu;Penguin Classics;1940-11-26;false
+The Brothers Karamazov;Fyodor Dostoevsky;Penguin Modern Classics;2022-06-09;false
+Cuvinte potrivite;Tudor Arghezi;HarperCollins;1946-03-05;false
+The Picture of Dorian Gray;Oscar Wilde;Arthur;2002-04-26;false
+Great Expectations;Charles Dickens;Vintage Books;2023-11-14;false
+Life of Pi;Yann Martel;Vintage Books;1960-06-13;false
+Don Quixote;Miguel de Cervantes;Nemira;2023-06-01;false
+The Catcher in the Rye;J.D. Salinger;Nemira;2021-04-15;false
+Anna Karenina;Leo Tolstoy;Rao;2019-12-28;false
+The Hobbit;J.R.R. Tolkien;All;2021-06-07;false
+Divergent;Veronica Roth;Editura Litera;2019-10-21;false
+Paradise Lost;John Milton;Polirom;1955-11-12;false
+A Tale of Two Cities;Charles Dickens;Albatros;1954-11-27;false
+Oliver Twist;Charles Dickens;Penguin Modern Classics;1932-02-22;false
+Gone with the Wind;Margaret Mitchell;Vintage Books;1947-05-11;false
+Wuthering Heights;Emily Bronte;Univers;1968-08-20;false
+Cuvinte potrivite;Tudor Arghezi;Cartea Romaneasca;2008-09-08;false
+Gulliver's Travels;Jonathan Swift;Rao;1972-06-16;false
+The Grapes of Wrath;John Steinbeck;Humanitas;2001-04-11;false
+Moara cu noroc;Ioan Slavici;Polirom;2001-03-22;false
+Romanul adolescentului miop;Mircea Eliade;Editura Litera;1996-07-28;false
+Madame Bovary;Gustave Flaubert;Editura Litera;1923-06-03;false
+Rebecca;Daphne du Maurier;Vintage Books;1940-06-09;false
+Din umbra zidurilor;Octavian Goga;Rao;1977-06-19;false
+Catching Fire;Suzanne Collins;Nemira;1928-04-17;false
+The Brothers Karamazov;Fyodor Dostoevsky;Nemira;2003-03-23;false
+Ulysses;James Joyce;Humanitas;2016-07-12;false
+Ion;Liviu Rebreanu;Penguin Modern Classics;1945-03-14;false
+Inferno;Dan Brown;Arthur;1951-04-13;false
+Siddhartha;Hermann Hesse;Polirom;1940-10-21;false
+Frankenstein;Mary Shelley;Penguin Classics;1997-04-30;false
+The Catcher in the Rye;J.D. Salinger;Cartea Romaneasca;1978-04-12;false
+War and Peace;Leo Tolstoy;Rao;1933-12-05;false
+The Old Man and the Sea;Ernest Hemingway;Polirom;1940-01-06;false
+Ulysses;James Joyce;Penguin Classics;1945-08-20;false
+The Divine Comedy;Dante Alighieri;Macmillan;1997-10-17;false
+The Brothers Karamazov;Fyodor Dostoevsky;Vintage Books;1989-03-22;false
+Les Misérables;Victor Hugo;Editura Litera;2011-05-29;false
+Ulysses;James Joyce;Albatros;2011-06-29;false
+Catch-22;Joseph Heller;Nemira;1996-07-13;false
+Sense and Sensibility;Jane Austen;Nemira;2014-04-17;false
+The Road;Cormac McCarthy;Penguin Classics;2002-07-16;false
+1984;George Orwell;HarperCollins;1956-10-19;false
+Little Women;Louisa May Alcott;Nemira;1968-12-24;false
+Catch-22;Joseph Heller;HarperCollins;1923-01-31;false
+The Fault in Our Stars;John Green;Humanitas;1995-05-24;false
+The Hobbit;J.R.R. Tolkien;Penguin Classics;1976-02-23;false
+The Brothers Karamazov;Fyodor Dostoevsky;Rao;1938-01-31;false
+Around the World in 80 Days;Jules Verne;Rao;1967-10-04;false
+The Scarlet Letter;Nathaniel Hawthorne;Penguin Classics;1939-04-07;false
+The Fault in Our Stars;John Green;Polirom;1930-12-10;false
+Angels & Demons;Dan Brown;Penguin Classics;1951-07-01;false
+The Sound and the Fury;William Faulkner;Polirom;1939-02-24;false
+Faust;Johann Wolfgang von Goethe;Rao;2022-12-06;false
+The Great Alone;Kristin Hannah;HarperCollins;2019-11-19;false
+East of Eden;John Steinbeck;Albatros;1947-05-06;false
+Twilight;Stephenie Meyer;Nemira;1970-05-06;false
+The Stranger;Albert Camus;HarperCollins;2018-01-08;false
+The Book Thief;Markus Zusak;Polirom;1996-12-30;false
+East of Eden;John Steinbeck;Macmillan;1930-10-10;false
+The Da Vinci Code;Dan Brown;HarperCollins;1928-01-03;false
+The Old Man and the Sea;Ernest Hemingway;Humanitas;2004-11-23;false
+Heart of Darkness;Joseph Conrad;Albatros;1981-06-07;false
+Dracula;Bram Stoker;Arthur;1947-09-05;false
+To Kill a Mockingbird;Harper Lee;Cartea Romaneasca;1928-04-02;false
+Cuvinte potrivite;Tudor Arghezi;Macmillan;1928-04-08;false
+The Shining;Stephen King;Polirom;1974-06-20;false
+Wuthering Heights;Emily Bronte;Albatros;2010-09-24;false
+Emma;Jane Austen;Vintage Books;1965-07-01;false
+Catching Fire;Suzanne Collins;Penguin Classics;1972-05-11;false
+The Divine Comedy;Dante Alighieri;Nemira;2011-02-11;false
+The Secret Garden;Frances Hodgson Burnett;Univers;1925-05-20;false
+Atonement;Ian McEwan;HarperCollins;2013-05-21;false
+Atonement;Ian McEwan;Nemira;1994-09-28;false
+The Count of Monte Cristo;Alexandre Dumas;Humanitas;1960-04-02;false
+Oliver Twist;Charles Dickens;Nemira;1973-02-21;false
+Heart of Darkness;Joseph Conrad;Arthur;2008-05-30;false
+20,000 Leagues Under the Sea;Jules Verne;All;2005-05-20;false
+Around the World in 80 Days;Jules Verne;Humanitas;1952-09-20;false
+The Old Man and the Sea;Ernest Hemingway;Vintage Books;1960-01-30;false
+Twilight;Stephenie Meyer;Editura Litera;1943-10-07;false
+O scrisoare pierduta;Ion Luca Caragiale;Penguin Classics;1968-03-18;false
+Baltagul;Mihail Sadoveanu;Penguin Classics;1996-04-28;false
+Ion;Liviu Rebreanu;HarperCollins;1978-04-11;false
+Paradise Lost;John Milton;Penguin Classics;1924-01-28;false
+Sense and Sensibility;Jane Austen;Rao;1941-10-13;false
+Don Quixote;Miguel de Cervantes;Penguin Classics;2000-05-25;false
+Paradise Lost;John Milton;Nemira;1955-07-10;false
+Siddhartha;Hermann Hesse;Penguin Classics;2006-07-09;false
+Rebecca;Daphne du Maurier;Penguin Classics;2001-01-22;false
+Frankenstein;Mary Shelley;Rao;1969-02-03;false
+Atonement;Ian McEwan;Polirom;1930-11-11;false
+One Hundred Years of Solitude;Gabriel Garcia Marquez;Albatros;2021-11-30;false
+The Little Prince;Antoine de Saint-Exupéry;Arthur;1978-08-10;false
+The Three Musketeers;Alexandre Dumas;All;1972-05-29;false
+Wuthering Heights;Emily Bronte;Macmillan;1944-02-03;false
+Madame Bovary;Gustave Flaubert;HarperCollins;1963-07-01;false
+Patul lui Procust;Camil Petrescu;Macmillan;1925-05-23;false
+Beloved;Toni Morrison;Rao;1934-09-08;false
+The Picture of Dorian Gray;Oscar Wilde;Rao;1965-09-20;false
+The Little Prince;Antoine de Saint-Exupéry;Penguin Classics;1974-06-01;false
+Mockingjay;Suzanne Collins;Univers;1977-05-05;false
+The Grapes of Wrath;John Steinbeck;Nemira;1927-11-06;false
+Frankenstein;Mary Shelley;Humanitas;1960-09-19;false
+The Old Man and the Sea;Ernest Hemingway;Cartea Romaneasca;1958-05-06;false
+Atonement;Ian McEwan;Macmillan;1991-09-12;false
+New Moon;Stephenie Meyer;Penguin Modern Classics;1929-10-17;false
+Harry Potter and the Philosopher's Stone;J.K. Rowling;HarperCollins;1967-03-30;false
+War and Peace;Leo Tolstoy;HarperCollins;1970-09-02;false
+The Count of Monte Cristo;Alexandre Dumas;Rao;1939-06-03;false
+The Hobbit;J.R.R. Tolkien;Univers;1983-07-23;false
+Don Quixote;Miguel de Cervantes;Rao;1934-07-25;false
+Emma;Jane Austen;Albatros;1985-04-27;false
+The Grapes of Wrath;John Steinbeck;All;1931-03-12;false
+Invisible Man;Ralph Ellison;Arthur;1996-03-06;false
+Breaking Dawn;Stephenie Meyer;Humanitas;1924-10-10;false
+New Moon;Stephenie Meyer;Arthur;1957-02-25;false

@@ -3,8 +3,37 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="Biblioteca.controller.MainController">
-    <Button text="Adaugă Carte" onAction="#handleAddBook"/>
-    <Button text="Cărți după Autor" onAction="#handleSearchByAuthor"/>
-    <TableView fx:id="tableView"/>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="Biblioteca.controller.MainController" spacing="10">
+    <!-- Bara de butoane de sus -->
+    <HBox spacing="5">
+        <!-- Grupul de butoane funcționale -->
+        <HBox fx:id="logicButtons" spacing="2">
+            <Button text="Adaugă Carte" onAction="#handleAddBook"/>
+            <Button text="Șterge Carte" onAction="#handleDeleteBook"/>
+            <Button text="Cărți după Autor" onAction="#handleSearchByAuthor"/>
+            <Button text="Cărți după Colecție" onAction="#handleSearchByCollection"/>
+            <Button text="Generează Raport Autor" onAction="#handleGenerateReportByAuthor"/>
+            <Button text="Generează Raport Colecție" onAction="#handleGenerateReportByCollection"/>
+        </HBox>
+
+        <!-- Spațiul gol care împinge butonul de refresh la dreapta -->
+        <Region HBox.hgrow="ALWAYS" />
+
+        <!-- Butonul de refresh la dreapta -->
+        <Button text="Refresh" onAction="#handleRefresh"/>
+    </HBox>
+
+    <!-- Tabelul de cărți -->
+    <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="titluColumn" text="Titlu"/>
+            <TableColumn fx:id="autorColumn" text="Autor"/>
+            <TableColumn fx:id="colectieColumn" text="Colecție"/>
+            <TableColumn fx:id="dataAchizitieColumn" text="Data Achizitie"/>
+        </columns>
+    </TableView>
 </VBox>

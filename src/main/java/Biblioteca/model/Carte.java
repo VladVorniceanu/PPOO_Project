@@ -7,14 +7,14 @@ public class Carte implements Serializable {
     private String titlu;
     private String autor;
     private String colectie;
-    private LocalDate dataImprumut;
+    private LocalDate dataAchizitie;
     private boolean imprumutata;
 
-    public Carte(String titlu, String autor, String colectie, LocalDate dataImprumut, boolean imprumutata) {
+    public Carte(String titlu, String autor, String colectie, LocalDate dataAchizitie, boolean imprumutata) {
         this.titlu = titlu;
         this.autor = autor;
         this.colectie = colectie;
-        this.dataImprumut = dataImprumut;
+        this.dataAchizitie = dataAchizitie;
         this.imprumutata = imprumutata;
     }
 
@@ -44,12 +44,12 @@ public class Carte implements Serializable {
         this.colectie = colectie;
     }
 
-    public LocalDate getDataImprumut() {
-        return dataImprumut;
+    public LocalDate getDataAchizitie() {
+        return dataAchizitie;
     }
 
-    public void setDataImprumut(LocalDate dataImprumut) {
-        this.dataImprumut = dataImprumut;
+    public void setDataAchizitie(LocalDate dataAchizitie) {
+        this.dataAchizitie = dataAchizitie;
     }
 
     public boolean isImprumutata() {

@@ -15,7 +15,7 @@ public class Biblioteca extends Application {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Biblioteca/view/biblioteca.fxml"));
             Parent root = loader.load();
             primaryStage.setScene(new Scene(root));
-            primaryStage.setTitle("Library Management");
+            primaryStage.setTitle("Biblioteca mea");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();

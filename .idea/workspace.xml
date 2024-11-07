@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Initial config and implementation of the project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" afterDir="false" />
+    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Made it run again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/Biblioteca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/biblioteca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Library_Project.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.36129034&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Library_Project.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.36129034",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Library_Project" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Biblioteca.Biblioteca" />
@@ -102,7 +99,7 @@
       <workItem from="1730118193527" duration="665000" />
       <workItem from="1730118866890" duration="992000" />
       <workItem from="1730981147617" duration="668000" />
-      <workItem from="1730981863923" duration="58000" />
+      <workItem from="1730981863923" duration="7569000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config and implementation of the project">
       <option name="closed" value="true" />
@@ -112,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729787243914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made it run again">
+      <option name="closed" value="true" />
+      <created>1730982058839</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730982058839</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +142,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial config and implementation of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial config and implementation of the project" />
+    <MESSAGE value="Made it run again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it run again" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
