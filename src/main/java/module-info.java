@@ -7,4 +7,8 @@ module org.example.ppoolibrary {
 
     opens Biblioteca to javafx.fxml;
     exports Biblioteca;
+    exports Biblioteca.model;
+    opens Biblioteca.model to javafx.fxml;
+    exports Biblioteca.controller;
+    opens Biblioteca.controller to javafx.fxml;
 }

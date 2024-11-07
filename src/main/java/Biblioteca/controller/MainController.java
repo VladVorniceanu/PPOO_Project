@@ -1,5 +1,6 @@
-package Biblioteca;
+package Biblioteca.controller;
 
+import Biblioteca.model.Carte;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 

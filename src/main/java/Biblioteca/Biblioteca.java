@@ -1,31 +1,28 @@
 package Biblioteca;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Biblioteca {
-    private List<Carte> carti;
+import java.io.IOException;
 
-    public Biblioteca() {
-        this.carti = new ArrayList<>();
+public class Biblioteca extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Biblioteca/view/biblioteca.fxml"));
+            Parent root = loader.load();
+            primaryStage.setScene(new Scene(root));
+            primaryStage.setTitle("Library Management");
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void adaugaCarte(Carte carte) {
-        carti.add(carte);
+    public static void main(String[] args) {
+        launch(args);
     }
-
-    public List<Carte> cautaCartiDupaAutor(String autor) {
-        return carti.stream()
-                .filter(c -> c.getAutor().equalsIgnoreCase(autor))
-                .collect(Collectors.toList());
-    }
-
-    public List<Carte> cautaCartiDupaColectie(String colectie) {
-        return carti.stream()
-                .filter(c -> c.getColectie().equalsIgnoreCase(colectie))
-                .collect(Collectors.toList());
-    }
-
-    // Mai poți adăuga și alte metode pentru filtrarea și gestiunea cărților.
 }
