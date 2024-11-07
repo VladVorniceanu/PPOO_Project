@@ -8,16 +8,17 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceDialog;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextInputDialog;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import java.time.LocalDate;
 import java.util.Optional;
 import Biblioteca.model.InvalidBookDataException;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class MainController {
 
@@ -62,6 +63,18 @@ public class MainController {
                 biblioteca.salveazaInFisier("biblioteca.txt");
             });
         });
+
+        tableView.setRowFactory(tv -> {
+            TableRow<Carte> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && (!row.isEmpty())) {
+                    Carte carte = row.getItem();
+                    showEditDialog(carte);
+                }
+            });
+            return row;
+        });
+
     }
 
     @FXML
@@ -196,5 +209,56 @@ public class MainController {
         alert.setHeaderText("Date invalide");
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    private void showEditDialog(Carte carte) {
+        Stage editStage = new Stage();
+        editStage.setTitle("Editare Carte");
+
+        VBox vbox = new VBox(10);
+        vbox.setPadding(new Insets(10));
+
+        // Titlu
+        TextField titluField = new TextField(carte.getTitlu());
+        titluField.setPromptText("Titlu");
+
+        // Autor
+        TextField autorField = new TextField(carte.getAutor());
+        autorField.setPromptText("Autor");
+
+        // Categorie
+        ChoiceBox<Categorie> categorieChoice = new ChoiceBox<>(FXCollections.observableArrayList(Categorie.values()));
+        categorieChoice.setValue(carte.getCategorie());
+
+        // Colecție
+        TextField colectieField = new TextField(carte.getColectie());
+        colectieField.setPromptText("Colecție");
+
+        // Butonul de salvare
+        Button saveButton = new Button("Salvează");
+        saveButton.setOnAction(e -> {
+            carte.setTitlu(titluField.getText().trim());
+            carte.setAutor(autorField.getText().trim());
+            carte.setCategorie(categorieChoice.getValue());
+            carte.setColectie(colectieField.getText().trim());
+
+            tableView.refresh(); // Actualizează `TableView`
+            editStage.close(); // Închide fereastra de editare
+        });
+
+        // Organizăm elementele în layout
+        vbox.getChildren().addAll(
+                new Label("Titlu"), titluField,
+                new Label("Autor"), autorField,
+                new Label("Categorie"), categorieChoice,
+                new Label("Colecție"), colectieField,
+                saveButton
+        );
+
+        // Setăm scena și afișăm fereastra de editare
+        Scene scene = new Scene(vbox);
+        editStage.setScene(scene);
+        editStage.initModality(Modality.APPLICATION_MODAL); // Blochează fereastra principală până se închide aceasta
+        editStage.showAndWait();
     }
 }
