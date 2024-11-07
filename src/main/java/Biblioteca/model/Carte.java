@@ -73,4 +73,16 @@ public class Carte implements Serializable {
     public String toString() {
         return getTitlu() + ";" + getAutor() + ";" + getCategorie() + ";" + getColectie() + ";" + getDataAchizitie() + ";" + isImprumutata();
     }
+
+    public static void validateBookData(String titlu, String autor, String colectie) throws InvalidBookDataException {
+        if (titlu == null || titlu.trim().isEmpty()) {
+            throw new InvalidBookDataException("Titlul nu poate fi gol.");
+        }
+        if (autor == null || autor.trim().isEmpty()) {
+            throw new InvalidBookDataException("Autorul nu poate fi gol.");
+        }
+        if (colectie == null || colectie.trim().isEmpty()) {
+            throw new InvalidBookDataException("Colecția nu poate fi goală.");
+        }
+    }
 }

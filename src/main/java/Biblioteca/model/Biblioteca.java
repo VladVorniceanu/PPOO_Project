@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static Biblioteca.model.Carte.validateBookData;
+
 public class Biblioteca {
     private List<Carte> carti;
 
@@ -50,8 +52,6 @@ public class Biblioteca {
 
     public void incarcaDinFisier(String numeFisier) {
         File fisier = new File(numeFisier);
-
-        // Verificăm dacă fișierul există înainte de a încerca să îl citim
         if (!fisier.exists()) {
             System.out.println("Fișierul " + numeFisier + " nu există. Se va crea automat la salvare.");
             return;
@@ -70,8 +70,13 @@ public class Biblioteca {
                     LocalDate dataImprumut = LocalDate.parse(campuri[4]);
                     boolean imprumutata = Boolean.parseBoolean(campuri[5]);
 
-                    Carte carte = new Carte(titlu, autor, Categorie.valueOf(categorie), colectie, dataImprumut, imprumutata);
-                    carti.add(carte);
+                    try {
+                        validateBookData(titlu, autor, colectie);
+                        Carte carte = new Carte(titlu, autor, Categorie.valueOf(categorie), colectie, dataImprumut, imprumutata);
+                        carti.add(carte);
+                    } catch (InvalidBookDataException e) {
+                        System.out.println("Eroare la încărcarea cărții: " + e.getMessage());
+                    }
                 }
             }
         } catch (IOException e) {

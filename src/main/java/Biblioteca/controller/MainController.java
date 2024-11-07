@@ -1,5 +1,6 @@
 package Biblioteca.controller;
 
+import static Biblioteca.model.Carte.validateBookData;
 import Biblioteca.model.Biblioteca;
 import Biblioteca.model.Carte;
 import Biblioteca.model.Categorie;
@@ -14,6 +15,9 @@ import javafx.scene.control.TextInputDialog;
 import javafx.scene.control.cell.PropertyValueFactory;
 import java.time.LocalDate;
 import java.util.Optional;
+import Biblioteca.model.InvalidBookDataException;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 
 public class MainController {
 
@@ -70,18 +74,36 @@ public class MainController {
         dialog.setTitle("Adaugă Carte Nouă");
 
         // Titlul
-        dialog.setHeaderText("Introduceți titlul cărții:");
-        Optional<String> titluOpt = dialog.showAndWait();
-        if (!titluOpt.isPresent()) return;
-        String titlu = titluOpt.get();
+        String titlu = null;
+        while (titlu == null || titlu.trim().isEmpty()) {
+            dialog.setHeaderText("Introduceți titlul cărții:");
+            Optional<String> titluOpt = dialog.showAndWait();
+
+            // Dacă utilizatorul apasă "Cancel" în dialog, ieșim din metodă
+            if (!titluOpt.isPresent()) return;
+
+            titlu = titluOpt.get().trim();
+
+            // Afișăm un mesaj de eroare dacă titlul este gol
+            if (titlu.isEmpty()) {
+                showError("Titlul nu poate fi gol!");
+            }
+        }
 
         dialog.getEditor().clear();
 
         // Autorul
-        dialog.setHeaderText("Introduceți autorul cărții:");
-        Optional<String> autorOpt = dialog.showAndWait();
-        if (!autorOpt.isPresent()) return;
-        String autor = autorOpt.get();
+        String autor = null;
+        while (autor == null || autor.trim().isEmpty()) {
+            dialog.setHeaderText("Introduceți autorul cărții:");
+            Optional<String> autorOpt = dialog.showAndWait();
+            if (!autorOpt.isPresent()) return;
+
+            autor = autorOpt.get().trim();
+            if (autor.isEmpty()) {
+                showError("Autorul nu poate fi gol!");
+            }
+        }
 
         dialog.getEditor().clear();
 
@@ -94,12 +116,18 @@ public class MainController {
         Categorie categorie = categorieOpt.get();
 
         // Colecția
-        dialog.setHeaderText("Introduceți colecția cărții:");
-        Optional<String> colectieOpt = dialog.showAndWait();
-        if (!colectieOpt.isPresent()) return;
-        String colectie = colectieOpt.get();
+        String colectie = null;
+        while (colectie == null || colectie.trim().isEmpty()) {
+            dialog.setHeaderText("Introduceți colecția cărții:");
+            Optional<String> colectieOpt = dialog.showAndWait();
+            if (!colectieOpt.isPresent()) return;
 
-        // Crearea cărții și adăugarea în biblioteca
+            colectie = colectieOpt.get().trim();
+            if (colectie.isEmpty()) {
+                showError("Colecția nu poate fi goală!");
+            }
+        }
+
         Carte carte = new Carte(titlu, autor, categorie, colectie, LocalDate.now(), false);
         biblioteca.adaugaCarte(carte);
 
@@ -160,5 +188,13 @@ public class MainController {
             biblioteca.genereazaRaportColectie(colectie, "raport_" + colectie + ".txt");
             System.out.println("Raport generat pentru colecția: " + colectie);
         });
+    }
+
+    private void showError(String message) {
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Eroare");
+        alert.setHeaderText("Date invalide");
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }
