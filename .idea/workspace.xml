@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Added text files reading/writing capability + various tweaks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Categorie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteca.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Biblioteca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca/model/Carte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Biblioteca/view/biblioteca.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="cac15885-b1b9-40cb-81f4-cd1b145eeffd" name="Changes" comment="Added new field for category of book and refreshed logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +93,7 @@
       <workItem from="1730118193527" duration="665000" />
       <workItem from="1730118866890" duration="992000" />
       <workItem from="1730981147617" duration="668000" />
-      <workItem from="1730981863923" duration="9117000" />
+      <workItem from="1730981863923" duration="9512000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config and implementation of the project">
       <option name="closed" value="true" />
@@ -127,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730990055051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added new field for category of book and refreshed logic">
+      <option name="closed" value="true" />
+      <created>1730991691420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730991691420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +154,7 @@
     <MESSAGE value="Initial config and implementation of the project" />
     <MESSAGE value="Made it run again" />
     <MESSAGE value="Added text files reading/writing capability + various tweaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added text files reading/writing capability + various tweaks" />
+    <MESSAGE value="Added new field for category of book and refreshed logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new field for category of book and refreshed logic" />
   </component>
 </project>

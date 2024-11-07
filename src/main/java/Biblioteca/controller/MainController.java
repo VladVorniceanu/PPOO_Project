@@ -75,11 +75,15 @@ public class MainController {
         if (!titluOpt.isPresent()) return;
         String titlu = titluOpt.get();
 
+        dialog.getEditor().clear();
+
         // Autorul
         dialog.setHeaderText("Introduceți autorul cărții:");
         Optional<String> autorOpt = dialog.showAndWait();
         if (!autorOpt.isPresent()) return;
         String autor = autorOpt.get();
+
+        dialog.getEditor().clear();
 
         // Selectarea categoriei din enum
         ChoiceDialog<Categorie> categorieDialog = new ChoiceDialog<>(Categorie.LITERATURA, Categorie.values());
