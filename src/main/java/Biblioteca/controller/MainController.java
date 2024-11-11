@@ -18,8 +18,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-
 import Biblioteca.model.InvalidBookDataException;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.VBox;
@@ -88,7 +86,7 @@ public class MainController {
         });
 
         biblioteca.incarcaDinFisier("src/main/java/Biblioteca/biblioteca.txt");
-        cartiObservableList.setAll(biblioteca.getCarti());  // Asigură-te că toate cărțile sunt setate
+        cartiObservableList.setAll(biblioteca.getCarti());  // Asigur că toate cărțile sunt setate
         tableView.setItems(cartiObservableList);
 
         // Salvăm datele când aplicația se închide
