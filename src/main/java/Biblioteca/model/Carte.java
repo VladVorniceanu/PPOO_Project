@@ -3,7 +3,7 @@ package Biblioteca.model;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Carte implements Serializable {
+public class Carte {
     private String titlu;
     private String autor;
     private Categorie categorie;

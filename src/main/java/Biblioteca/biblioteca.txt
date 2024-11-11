@@ -1,7 +1,6 @@
 The Alchemist;Paulo Coelho;ISTORIE;Cartea Romaneasca;2020-03-14;false
 To Kill a Mockingbird;Harper Lee;TEHNOLOGIE;Nemira;2016-07-15;true
 The Iliad;Homer;TEHNOLOGIE;Penguin Modern Classics;2014-07-22;true
-Crime and Punishment;Fyodor Dostoevsky;LITERATURA;Arthur;2018-01-24;false
 O scrisoare pierduta;Ion Luca Caragiale;BIOGRAFIE;All;2015-08-06;false
 Moara cu noroc;Ioan Slavici;SF;Humanitas;2021-01-02;false
 The Alchemist;Paulo Coelho;STIINTA;Polirom;2019-07-03;true
